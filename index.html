@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <section class="left-section">
+        <h1>Learn to code by watching others</h1>
+        <p class="description">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          but understanding how developers think is invaluable.</p>
+      </section>
+      <section class="right-section">
+        <div class="free-trail">
+          <p><span class="try-bold">Try it free 7 days</span> then<br> $20/mo. thereafter</p>
+        </div>
+        <form id="form" action="/">
+          <div class="input-control">
+              <span id="error-icon-id" class="error-icon"><img src="./images/icon-error.svg" alt=""></span>
+              <input id="firstname" name="firstname" type="text" placeholder="First Name">
+              <div class="error"></div>
+          </div>
+          <div class="input-control">
+              <span id="error-icon-id" class="error-icon"><img src="./images/icon-error.svg" alt=""></span>
+              <input id="lastname"name="lastname" type="text" placeholder="Last Name">
+              <div class="error"></div>
+          </div>
+          <div class="input-control">
+              <span id="error-icon-id" class="error-icon"><img src="./images/icon-error.svg" alt=""></span>
+              <input id="email" name="email" type="email" placeholder="Email Address">
+              <div class="error"></div>
+          </div>
+          <div class="input-control">
+              <span id="error-icon-id" class="error-icon"><img src="./images/icon-error.svg" alt=""></span>
+              <input id="password"name="password" type="password" placeholder="Password">
+              <div class="error"></div>
+          </div>
+          <input type="submit" value="CLAIM YOUR FREE TRIAL" id="input-btn">
+        <p class="terms-of-services">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+      </form>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.linkedin.com/in/vahid-khani-12937426a/" target="_blank">Vahid Khani</a>.
+    </p>
+  </footer>
+  <script src="./index.js"></script>
+</body>
+</html>
+
+<!-- 
+
+          <form action="#" onclick="checker()">
+          <input type="text" id="fname" name="fname" placeholder="First Name">
+          <span id="error-icon-name" class="error-icon"><img src="./images/icon-error.svg" alt=""></span>
+          <span id="error-message-name" class="error-message">First name cannot be empty</span>
+          <input type="text" id="lname" name="lname" placeholder="Last Name">
+          <span id="error-icon-lastname" class="error-icon"><img src="./images/icon-error.svg" alt=""></span>
+          <span id="error-message-lastname" class="error-message">Last name cannot be empty</span>
+          <input type="email" id="email" name="email" placeholder="Email Address" value="email@example/com">
+          <span id="error-icon-email" class="error-icon"><img src="./images/icon-error.svg" alt=""></span>
+          <span id="error-message-email" class="error-message">Lokks like this is not an email</span>
+          <input type="password" id="password" name="password" placeholder="Password">
+          <span id="error-icon-password" class="error-icon"><img src="./images/icon-error.svg" alt=""></span>
+          <span id="error-message-password" class="error-message">Password cannot be empty</span>
+          <input type="submit" value="CLAIM YOUR FREE TRIAL" id="input-btn">
+          <p class="terms-of-services">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+        </form>
+
+
+        email =>   value="email@example/com"
+
+
+        <form id="form" action="#">
+          <input type="text" required id="fname" name="fname" placeholder="First Name" title="First name cannot be empty" on:change={handleNameChange} bind:value=>
+          <span id="error-icon-name" class="error-icon"><img src="./images/icon-error.svg" alt=""></span>
+          <span id="error-message-name" class="error-message h-4">First name cannot be empty</span>
+          <input type="text" required id="lname" name="lname" placeholder="Last Name">
+          <span id="error-icon-lastname" class="error-icon"><img src="./images/icon-error.svg" alt=""></span>
+          <span id="error-message-lastname" class="error-message h-4">Last name cannot be empty</span>
+          <input type="email" required id="email" name="email" placeholder="Email Address" >
+          <span id="error-icon-email" class="error-icon"><img src="./images/icon-error.svg" alt=""></span>
+          <span id="error-message-email" class="error-message h-4">Lokks like this is not an email</span>
+          <input type="password" required id="password" name="password" placeholder="Password">
+          <span id="error-icon-password" class="error-icon"><img src="./images/icon-error.svg" alt=""></span>
+          <span id="error-message-password" class="error-message h-4">Password cannot be empty</span>
+          <input type="submit" value="CLAIM YOUR FREE TRIAL" id="input-btn">
+          <p class="terms-of-services">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+        </form>
+ -->
